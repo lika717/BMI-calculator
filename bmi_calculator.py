@@ -26,7 +26,7 @@ def calculate_bmi(weight, height, weight_unit, height_unit, precision=1):
         height = inches_to_meters(height)
     # Calculate BMI
     bmi = weight / (height ** 2)
-     #this is round the result in 1 precision
+     #this is to round the result in 1 precision
     return round (bmi, 1)
   #defining the category based on the bmi value, the elif are used because they are mutually exclusive
 def bmi_category(bmi):
